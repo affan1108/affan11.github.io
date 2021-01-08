@@ -84,22 +84,24 @@ header img
 	margin-bottom: 10px;
 }
 
+}
+
 .menu-kiri
 {
-	width: 230px;
+	width: 250px;
 	margin-right: 10px;
 	float: left;
 }
 
 .menu-kanan
 {
-	width: 235px;
-	float: right;
+	width: 250px;
+	float: left;
 }
 
 .menu-tengah
 {
-	width: 850px;
+	width: 530px;
 	margin-right: 10px;
 	float: left;
 }
@@ -116,4 +118,54 @@ footer
 	color: white;
 	padding: 15px;
 	text-align: center;
+}
+
+/*untuk tablet*/
+@media screen and (max-width:1080px)
+{
+    .badan-utama
+    {
+        width: auto;
+    }
+ 
+    .menu-kiri
+    {
+        width: 25%;
+    }
+ 
+    .menu-tengah
+    {
+        width: 45%;
+        float: center;
+    }
+ 
+    .menu-kanan
+    {
+        float: right;
+        width: 25%;
+    }
+}
+ 
+/*untuk android*/
+@media screen and (max-width:780px)
+{
+    badan-utama
+    {
+        width: auto;
+    }
+    header h2, header p
+    {
+        text-align: center;
+    }
+ 
+    .menu-kiri, .menu-kanan, .menu-tengah
+    {
+        float: none;
+        width: 100%;
+    }
+ 
+    .navigasi li
+    {
+        float: none;
+    }
 }
